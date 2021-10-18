@@ -9,12 +9,10 @@ def ex3(k):
             return True
         suma += a
         a, b = b, a + b
-        if suma > k:
-            while suma > k:
-                suma -= p
-                p, q = q, p + q
+        while suma > k:
+            suma -= p
+            p, q = q, p + q
     return False
 
 
 print(ex3(3))
-
