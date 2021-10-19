@@ -14,7 +14,7 @@ def is_perfect(k):
 
 
 def ex10():
-    for x in range(2, 10**5):
+    for x in range(2, 10**6):
         if is_perfect(x):
             print(x, end=" ")
 
