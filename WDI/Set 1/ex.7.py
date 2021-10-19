@@ -12,4 +12,4 @@ def ex7(n):
     return False
 
 
-print(ex7(39))
+print(ex7(40))
