@@ -6,8 +6,8 @@ def ex11():
     for x in range(2, 10**6):
         a = sum_of_proper_divisors(x)
         b = sum_of_proper_divisors(a)
-        if x == b and x < a and b < 10**6:
-            print((x, a))
+        if x == b and x > a:
+            print((a, x))
 
 
 def sum_of_proper_divisors(n):
