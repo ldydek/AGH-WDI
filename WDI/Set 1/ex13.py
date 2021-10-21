@@ -4,7 +4,7 @@
 
 def product_by_gcd(a, b):
     x, y = a, b
-    while a != 0:
+    while a:
         a, b = b % a, a
     return (x*y)//b
 
