@@ -2,7 +2,7 @@
 # Solution: We can compute GCD of two numbers using Euclidean algorithm.
 
 def gcd(a, b):
-    while a != 0:
+    while a:
         a, b = b % a, a
     return b
 
