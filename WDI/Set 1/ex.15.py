@@ -1,3 +1,6 @@
+# 15. There is an infinity product: sqrt(0.5) * sqrt(0.5 + 0.5 * sqrt(0.5)) * sqrt(0.5 + 0.5 * 
+# sqrt(0.5 + 0.5 * sqrt(0.5))) * ... = 2/pi. Write program that computes pi value using this equation.
+
 from math import pi
 
 
