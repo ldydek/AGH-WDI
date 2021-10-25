@@ -1,7 +1,7 @@
 # 8. Write program that checks if given number is prime.
 # Solution: If one of elements in range from 2 to floor of square root plus one is divided by this number it means that
 # it has a divisor distinct from 1 and this number. If this situation won't happen it means that this number doesn't
-# have any divisors bigger than 1 and smaller than this number.
+# have any divisors bigger than 1 and smaller than this number, so it's prime.
 
 
 def ex8(n):
