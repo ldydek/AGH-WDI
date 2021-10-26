@@ -8,6 +8,8 @@ def is_palindrome(n, k):
         k -= 1
         number += ((n // (10**x)) % 10) * (10**k)
     return number == n
+# Here we create additional number adding digits from beginning to the end. Finally, if these two numbers are equal
+# it means that "n" is a palindrome.
 
 
 def binary(n):
@@ -28,6 +30,7 @@ def length(n):
         n //= 10
         ctr += 1
     return ctr
+# Function returning number of digits.
 
 
 def ex3(n):
