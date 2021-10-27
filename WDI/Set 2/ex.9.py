@@ -9,6 +9,7 @@ def ex9(k):
     e, x, surface = 10**(-5), 1, 0
     while x < k:
         surface += e*(f(x)+f(x+e))/2
+#       arithmetic mean of two function values: f(x) and f(x+e) to get more precise rectangle's height 
         x += e
     return surface
 
