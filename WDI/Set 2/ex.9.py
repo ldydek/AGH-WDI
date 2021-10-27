@@ -6,8 +6,7 @@ def f(x):
 
 
 def ex9(k):
-    e, x = 10**(-5), 1
-    surface = 0
+    e, x, surface = 10**(-5), 1, 0
     while x < k:
         surface += e*(f(x)+f(x+e))/2
         x += e
