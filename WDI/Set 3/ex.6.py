@@ -2,7 +2,7 @@
 
 
 def odd_digit(a):
-    while a > 0:
+    while a:
         if a % 2:
             return True
         a //= 10
