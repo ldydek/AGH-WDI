@@ -1,4 +1,4 @@
-# 9. Write program which determines the length of the longest contiguous increasing subsequence.
+# 9. Write program which determines the length of the longest contiguous increasing subsequence in a given array.
 
 def ex9(arr):
     n, solution, ctr = len(arr), 0, 1
