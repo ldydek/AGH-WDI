@@ -14,7 +14,7 @@ def is_palindrome(n, k):
 
 def binary(n):
     number, ctr = 0, 0
-    while n > 0:
+    while n:
         number *= 10
         number += n % 2
         n //= 2
@@ -26,7 +26,7 @@ def binary(n):
 
 def length(n):
     ctr = 0
-    while n > 0:
+    while n:
         n //= 10
         ctr += 1
     return ctr
