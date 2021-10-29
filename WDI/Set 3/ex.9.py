@@ -8,6 +8,7 @@ def ex9(arr):
         else:
             solution = max(solution, ctr)
             ctr = 1
+    solution = max(solution, ctr)
     return solution
 
 
