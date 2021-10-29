@@ -1,4 +1,4 @@
-# 10. Write program which determines the length of the longest contiguous arithmetic sequence.
+# 10. Write program which determines the length of the longest contiguous arithmetic subsequence in a given array.
 
 def ex10(arr):
     n, solution, ctr = len(arr), 0, 2
