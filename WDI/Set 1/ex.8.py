@@ -3,7 +3,6 @@
 # it has a divisor distinct from 1 and this number. If this situation won't happen it means that this number doesn't
 # have any divisors bigger than 1 and smaller than this number, so it's prime.
 
-
 def ex8(n):
     if n <= 1:
         return False
