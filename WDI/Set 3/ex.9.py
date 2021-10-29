@@ -5,8 +5,8 @@ def ex9(arr):
     for x in range(n-1):
         if arr[x] < arr[x+1]:
             ctr += 1
-            solution = max(solution, ctr)
         else:
+            solution = max(solution, ctr)
             ctr = 1
     return solution
 
