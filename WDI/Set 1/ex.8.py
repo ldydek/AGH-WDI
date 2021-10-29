@@ -11,4 +11,5 @@ def ex8(n):
             return False
     return True
 
+
 print(ex8(97))
