@@ -9,13 +9,12 @@ def odd_digit(a):
     return False
 
 
-def ex6(arr, n):
-    for x in range(n):
+def ex6(arr):
+    for x in range(len(arr)):
         if odd_digit(arr[x]) is False:
             return False
     return True
 
 
 arr = [1, 212, 345, 32, 246, 90, 56]
-n = len(arr)
-print(ex6(arr, n))
+print(ex6(arr))
