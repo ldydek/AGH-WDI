@@ -19,4 +19,4 @@ def ex2(a, b):
 
 
 print(ex2(725, 2275))
-# both numbers are built with 2, 5, and 7, so the answer is true
+# both numbers are built with 2, 5 and 7, so the answer is true
