@@ -1,5 +1,5 @@
 # 15. Write program computing all n-digit numbers, which sum of all digits raised to the nth power equals this number.
-# They are called narcissistic number.
+# They are called narcissistic numbers.
 
 def sum(n, k):
     sum = 0
