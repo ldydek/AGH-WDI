@@ -3,11 +3,12 @@
 
 def ex2(a, b, n):
     print(a//b, end=".")
-    while n:
+    while n > 0:
         a = (a % b)*10
         print(a//b, end="")
         n -= 1
 
 
-ex2(12, 7, 20)
+ex2(124, 13, 20)
+
 
