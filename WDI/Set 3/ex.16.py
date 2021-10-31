@@ -3,11 +3,15 @@
 
 def ex16(arr):
     n = len(arr)
+    if n == 1:
+        return True
     a, b, ctr = -10**10, 10**10, 0
     for x in range(n):
         a = max(a, arr[x])
         b = min(b, arr[x])
     #     a - max, b - min
+    if a == b:
+        return False
     for x in range(n):
         if arr[x] == a or arr[x] == b:
             ctr += 1
