@@ -39,7 +39,7 @@ def ex20(a, b):
         if different_digits(change_system(a, x), change_system(b, x)):
             return x
     return False
-# if appropriate base doesn't exist
+# False if appropriate base doesn't exist.
 # a, b - given numbers from the user
 # x - number system base
 
