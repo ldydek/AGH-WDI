@@ -8,6 +8,8 @@ def is_perfect(k):
             suma += i + k//i
         i += 1
     suma += 1
+    if int(k**(1/2)) == k**(1/2):
+        suma += int(k**(1/2))
     if suma == k:
         return True
     return False
