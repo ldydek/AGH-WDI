@@ -39,7 +39,7 @@ def ex20(a, b):
         if different_digits(change_system(a, x), change_system(b, x)):
             return x
     return False
-# if we can't find appropriate base
+# if appropriate base doesn't exist
 
 
 print(ex20(123, 522))
