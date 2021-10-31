@@ -40,6 +40,8 @@ def ex20(a, b):
             return x
     return False
 # if appropriate base doesn't exist
+# a, b - given numbers from the user
+# x - number system base
 
 
 print(ex20(123, 522))
