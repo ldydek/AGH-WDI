@@ -1,6 +1,7 @@
 # 13. We have a given array with pseudorandom numbers. Write program which computes the length of the longest contiguous
 # subsequence for which we can find also the reverse of it in that array. Note that e.g. for [2, 1, 3, 1, 2] is
 # a reverse itself.
+# Solution: We move either front pointer (b) if previous subsequence reverse was found, or (a) otherwise.
 
 
 def ex13(arr):
