@@ -1,5 +1,6 @@
 # 15. We have a given array. Write program checking whether each number which index is one of the Fibonacci sequence
-# elements is composite and, apart from this, if there is also at least one prime number in that array.
+# elements is composite and, apart from this, if there is also at least one prime number in that array. To determine
+# if number is prime I use sieve of Eratosthenes. 
 
 
 def sieve(aux_arr, n):
