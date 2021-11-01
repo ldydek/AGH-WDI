@@ -29,3 +29,5 @@ def ex15(arr):
 
 arr = [20, 4, 6, 8, 5, 34, 56]
 print(ex15(arr))
+# Program will return true, because everything is ok, but if we change, for instance, 5 to 50 then it'll be false,
+# because it won't be any prime number.
