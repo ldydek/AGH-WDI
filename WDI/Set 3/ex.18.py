@@ -1,5 +1,6 @@
 # 18. We have a given array with natural numbers. Write program which computes the length of the longest contiguous
 # subsequence which is a palindrome. Additionally, this palindrome can contain only odd numbers.
+# Solution: Firstly, I consider possible palindromes with odd length, later with even.
 
 def ex18(arr):
     n, solution = len(arr), 0
