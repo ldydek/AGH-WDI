@@ -40,7 +40,7 @@ def ex5(arr):
     if sum1 == sum3 == 0:
         return False
     elif sum1/sum2 > sum3/sum4:
-        return b, a, sum1/sum2
+        return b, a
     return d, c
 
 
