@@ -1,5 +1,6 @@
 # 2. We have given 2d array filled with natural numbers. Write program checking whether in each row there is at least
-# one composite number consisting of only odd digits.
+# one composite number consisting of only odd digits. To determine if number is prime or composite I use sieve of 
+# Eratosthenes algorithm.
 
 
 def odd_digits(a):
@@ -21,11 +22,11 @@ def sieve(arr, n):
 
 def ex2(arr):
     n = len(arr)
-    k = max(arr)
-    k = max(k)
+    k = max(max(x) for x in arr)
+    k += 1
     # fast determining the biggest number in a matrix
-    aux_arr = [1]*(k+1)
-    sieve(aux_arr, k+1)
+    aux_arr = [1]*k
+    sieve(aux_arr, k)
 
     for x in range(n):
         boole = False
