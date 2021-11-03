@@ -12,7 +12,7 @@ def ex5():
         arr.append(x)
         x = int(input())
     arr.sort()
-    return arr[9]
+    return arr[len(arr)-10]
 
 
 print(ex5())
