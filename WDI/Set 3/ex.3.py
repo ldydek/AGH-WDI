@@ -1,4 +1,6 @@
 # 3. Write program computing all prime numbers smaller than "n" by sieve of Eratosthenes algorithm.
+# Solution: Idea is to change all array indexes which are multiple of "p" and "p" starts from the
+# smallest prime number.
 
 def ex3(n):
     arr = [1]*n
