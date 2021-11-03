@@ -1,4 +1,5 @@
 # 7. Write program checking whether there is a number in an array, which contains only odd digits.
+# Solution: If we meet an even digit in "odd_digits" function, we'll just return "False".
 
 def odd_digits(a):
     while a:
