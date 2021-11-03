@@ -3,7 +3,8 @@
 # not a digit.
 # Solution: I allocate here auxiliary array to store information about 0 in columns simultaneously. Thanks to this
 # I can traverse this matrix only once. Variable "k" informs us whether in a certain row there is at least one 0. If
-# this situation won't happen and "k" will remain False we can simply stop program and return False.
+# this situation won't happen and "k" will remain False we can simply stop program and return False. At the end,
+# I traverse auxiliary array and if there is 0 in it it means that there is at least one column which doesn't contain 0.
 
 def ex10(arr):
     n = len(arr)
