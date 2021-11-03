@@ -1,6 +1,5 @@
 # 6. Write program checking whether every number in an array contain at least one odd digit.
-# Solution: odd_digit function checks every digit of a given number and in the main function we call
-# it for each number.
+# Solution: odd_digit function checks every digit of a given number and in the main function we call it for each number.
 
 
 def odd_digit(a):
