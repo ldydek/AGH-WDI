@@ -1,5 +1,6 @@
 # 9. We have a given 2d array with natural numbers. Write program checking whether we can find in it a square with odd
-# number of elements bigger than 1 for which product of four corner elements is equal to "k".
+# number of elements bigger than 1 for which product of four corner elements is equal to "k". If this square doesn't
+# exist program should return "False".
 
 
 def ex9(arr, k):
