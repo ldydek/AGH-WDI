@@ -1,6 +1,6 @@
 # 4. Write program which computes integer part of a square root of a given number, using following:
 # 1 + 3 + 5 + ... + 2n-1 = n^2.
-# Solution: when our temporary sum will exceed given number, solution is quantity of while loop performances.
+# Solution: when our temporary sum will exceed given number, solution is quantity of while loop performances minus one.
 
 def ex4(n):
     ctr, suma, x = -1, 0, 1
