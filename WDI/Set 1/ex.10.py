@@ -1,4 +1,8 @@
 # 10. Print all perfect numbers smaller than million.
+# Solution: Perfect number is a positive integer that is equal to the sum of all its divisors without this number.
+# For instance: 6 = 1 + 2 + 3. At the beginning we check in auxiliary function sum of all divisors of a given number
+# excluding this number itself (something similar to checking if number is prime). If so, it means that this number is
+# perfect and we can simply print it.
 
 
 def is_perfect(k):
