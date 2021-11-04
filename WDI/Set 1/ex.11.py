@@ -1,6 +1,8 @@
 # 11. Write program computing all pairs of amicable numbers smaller than million. Amicable numbers means that sum
 # of one number divisors, excluding the number itself equals to the second one and the same happens with another
 # number of this pair.
+# Solution: In auxiliary function we just sum all proper divisors of given number and later in main function we
+# compare this results. Note that condition "x" > "a" will prevent from printing numbers bigger than 10**6.
 
 def ex11():
     for x in range(2, 10**6):
