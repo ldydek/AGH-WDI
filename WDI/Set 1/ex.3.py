@@ -2,6 +2,7 @@
 # sequence.
 # Solution: Idea is to iterate from the beginning and when temporary sum exceeds our number, we start
 # subtracting elements of the Fibonacci sequence from the beginning (because subsequence has to be contiguous).
+
 def ex3(k):
     suma = 0
     a, b, p, q = 0, 1, 0, 1
