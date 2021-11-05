@@ -4,7 +4,7 @@
 # similar to Fibonacci sequence. "a" - year, "b" - our sum that we are looking for, "c", "d", "xd", "ty" - beginning
 # values of considered pair of numbers. One pair is moving to check if 2020 year is in this sequence. If so, we then
 # use "c" and "b" to check if c+b is smaller than our temporary sum. If so, I assign these starting numbers to my
-# solution ("an", "bn") and modify temporary sum. Note that first element of our pair can be smaller than second.
+# solution ("an", "bn") and modify temporary sum. Note that first element of our pair can be bigger than second.
 
 def ex2():
     a, b = 2020, 2020
