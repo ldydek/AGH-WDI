@@ -4,8 +4,8 @@
 # same until we achieve given accuracy or find a solution.
 
 def ex6():
-    a, b, accuracy = 4, 5, 0.0001
-    while b-a > accuracy:
+    a, b = 4, 5
+    while b-a > 10**(-4):
         x = (a+b)/2
         if x**x == 2020:
             return x
