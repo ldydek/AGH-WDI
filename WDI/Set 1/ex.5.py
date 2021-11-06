@@ -7,8 +7,8 @@
 
 
 def ex5(n):
-    a, b, e = 1, n, 10**(-5)
-    while abs(b-a) > e:
+    a, b = 1, n
+    while abs(b-a) > 10**(-5):
         a = (a+b)/2
         b = n/a
     return a
