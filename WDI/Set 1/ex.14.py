@@ -1,4 +1,8 @@
 # 14. Write program computing cos(x) using Maclaurin series.
+# Solution: In "maclaurin_series" function we compute an nth element of this sequence using factorial from the "math"
+# module. Later, in main function when two contiguous elements values become almost the same we can just return sum of
+# all elements encountered so far. That value (for certain "x") is approximately equal to cos(x).
+
 from math import factorial
 
 
