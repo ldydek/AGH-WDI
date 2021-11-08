@@ -4,8 +4,8 @@
 # I can just return either "an" or "bn", because these values are almost the same.
 
 def ex20():
-    an, bn, e = 24, 6, 10**(-10)
-    while abs(an-bn) > e:
+    an, bn = 24, 6
+    while abs(an-bn) > 10**(-10):
         x = an
         an = (an*bn)**(1/2)
         bn = (x+bn)/2
