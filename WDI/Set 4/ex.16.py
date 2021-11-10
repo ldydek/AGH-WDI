@@ -1,4 +1,4 @@
-# 16. We have 2d array with natural numbers. Write program checking whether each row in the array contain at least
+# 16. We have a 2d array with natural numbers. Write program checking whether each row in the array contain at least
 # one composite number in which all digits are prime numbers.
 
 
