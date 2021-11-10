@@ -3,15 +3,15 @@
 # also sorted non decreasingly.
 
 
-def ex7(arr):
-    n = len(arr)
-    arr1 = [0]*(n**2)
+def ex7(T1):
+    n = len(T1)
+    T2 = [0]*(n**2)
     for x in range(n):
         for y in range(n):
-            arr1[x*n+y] = arr[x][y]
-    arr1.sort()
-    return arr1
+            T2[x*n+y] = T1[x][y]
+    T2.sort()
+    return T2
 
 
-arr = [[1, 5, 8, 9], [1, 4, 7, 8], [3, 4, 5, 10], [3, 7, 11, 13]]
-print(ex7(arr))
+T1 = [[1, 1, 8, 9], [1, 4, 7, 8], [3, 5, 5, 10], [3, 7, 11, 13]]
+print(ex7(T1))
