@@ -1,5 +1,5 @@
 # 19. There is a given 2d array with natural numbers. Write program that returns number of elements pairs of a certain
-# product. However, there is an additional condition - elements lie in a distance of one chess knight's move.
+# product. However, there is an additional condition - elements have to lie in a distance of one chess knight's move.
 # Solution: I allocate additional array with possible moves by chess knight and later I check if I'd stay on the board
 # after jump. If so, I check product of certain two numbers. At the end, we divide ctr by 2, because each solution was
 # counted twice (if a*b=k firstly we were on "a" and later on "b").
