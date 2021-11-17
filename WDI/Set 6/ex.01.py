@@ -1,7 +1,7 @@
 # 1. Write program which prints for a given integer all prime numbers which consist of at least two digits and we can
 # create them by deleting at least one digit from the original integer.
 # Solution: I build a recursive tree. At each level of it I delete one digit and recursively call a function for the
-# remaining pieces
+# remaining pieces. To print a number only once found integers so far I keep in an auxiliary array with solutions.
 
 
 def length(n):
