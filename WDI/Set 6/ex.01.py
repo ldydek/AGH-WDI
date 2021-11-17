@@ -2,6 +2,7 @@
 # create them by deleting at least one digit from the original integer.
 # Solution: I build a recursive tree. At each level of it I delete one digit and recursively call a function for the
 # remaining pieces. To print a number only once found integers so far I keep in an auxiliary array with solutions.
+# "l" variable helps me consider only these integers with at least one deleted digit.
 
 
 def length(n):
