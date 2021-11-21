@@ -18,7 +18,7 @@ def weight(n):
             break
         k += 1
     return ctr
-# function computing weight of given number
+# function computing "weight" of given number
 
 
 def ex02(arr):
