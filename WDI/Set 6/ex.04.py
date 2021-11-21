@@ -1,4 +1,4 @@
-# 4. Chess knight problem. Write program completing a chessboard with consecutive natural numbers by knight's move.
+# 04. Chess knight problem. Write program completing a chessboard with consecutive natural numbers by knight's move.
 # Solution: I can write possible moves by knight in a "moves" array. In the recursive function I am on a certain
 # position (at the beginning e.g. arr[0][0]) and if I can move to suitable place I do it (suitable place means free
 # place on a chessboard, which wasn't visited so far). Assigning 0 to arr[x][y] is pivotal in this program, because
