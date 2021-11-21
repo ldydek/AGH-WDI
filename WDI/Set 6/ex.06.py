@@ -7,7 +7,8 @@
 # are not modified by recursion and we update them if we find appropriate subset with less quantity of elements.
 # It's really important to understand why I return False in both cases. Answer is simple. I want to build entire
 # binary recursive tree to consider all subsets. If I return True, for instance in second case, for same examples
-# program can return subset with bigger quantity of elements (because suddenly one of function copies will return True)
+# program can return subset with bigger quantity of elements (because suddenly one of function copies will return True
+# and recursion will stop).
 
 
 def ex06(arr):
