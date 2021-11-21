@@ -44,6 +44,7 @@ def ex02_recu(arr, arr_sum, x):
     if arr_sum[0] == arr_sum[1] == arr_sum[2] and arr_sum[0] != 0:
         return True
     # "arr_sum[0] != 0" is obligatory, because at the beginning all elements in "arr_sum" are equal to 0
+    # (each subset is empty)
     if x == len(arr):
         return False
     # if array index is out of range recursion is forced to return
