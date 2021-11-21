@@ -1,4 +1,4 @@
-# 3. Chessboard is represented as a 2d array with natural numbers. Each number describes a cost of staying on a certain
+# 03. Chessboard is represented as a 2d array with natural numbers. Each number describes a cost of staying on a certain
 # field. At the beginning, chess king is in a first row (accurate indexes are given in the input). It has to move to
 # the last row in only 7 moves (we suppose that chessboard is a matrix T[8][8]). Write program that computes the
 # cheapest path from given position to the last row. To the solution we also include cost of the first position and
