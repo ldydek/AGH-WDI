@@ -3,7 +3,7 @@
 # when "n" is our given number we can print this divisor, let's say "x", and n/x at once.
 
 
-def ex9(n):
+def ex09(n):
     for x in range(1, int(n**(1/2))):
         if n % x == 0:
             print(x, n//x, end=" ")
@@ -11,4 +11,4 @@ def ex9(n):
         print(int(n**(1/2)))
 
 
-ex9(1625)
+ex09(1625)
