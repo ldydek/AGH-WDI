@@ -1,39 +1,44 @@
-# 11. We call two numbers a "friends" if they are built with the same digits e.g. 123, 321 or 35, 53553. We have a given
-# 2d array with natural numbers. Write program computing how many numbers in it are surrounded only by friendly numbers.
+# 11. We call two numbers friends if they are built with the same digits. There is given 2d array filled with integers.
+# Write function which computes all integers that are surrounded only by their friends.
+# Solution: I traverse given matrix horizontally and thanks to auxiliary function I check if given integer is surrounded
+# only by its friends.
 
-
-def same_digits(a, b, arr):
-    while a > 0:
-        arr[a % 10] = 1
+def friends(a, b):
+    aux_tab1 = [0] * 10
+    aux_tab2 = [0] * 10
+    while a:
+        aux_tab1[a % 10] = 1
         a //= 10
-    while b > 0:
-        if arr[b % 10]:
-            arr[b % 10] = 2
-        else:
-            return False
+    while b:
+        aux_tab2[b % 10] = 1
         b //= 10
     for x in range(10):
-        if arr[x] == 1:
+        # if certain indexes are different it means that one digit occurs in certain integer and not in the other one
+        if aux_tab1[x] != aux_tab2[x]:
             return False
     return True
 
 
 def ex11(arr):
-    n, ctr = len(arr), 0
-    for x in range(1, n-1):
-        for y in range(1, n-1):
-            aux_arr = [0] * 10
-            k = True
-            for z in range(x-1, x+2):
-                if same_digits(arr[z][y-1], arr[x][y], aux_arr) is False or same_digits(arr[z][y+1], arr[x][y], aux_arr) is False:
-                    k = False
-            if same_digits(arr[x+1][y], arr[x][y], aux_arr) is False or same_digits(arr[x-1][y], arr[x][y], aux_arr) is False:
-                k = False
-            if k:
-                ctr += 1
+    n = len(arr)
+    solution = 0
+    directions = [(0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0)]
+    # possible moves in a matrix
+    for x in range(n):
+        for y in range(n):
+            flag = True
+            for a, b in directions:
+                if 0 <= x + a <= n-1 and 0 <= y + b <= n-1:
+                    # this condition prevents from escaping outside of a given matrix
+                    if friends(arr[x][y], arr[x+a][y+b]) is False:
+                        flag = False
+                        break
+            if flag is True:
+                solution += 1
+    return solution
 
-    return ctr
 
-
-arr = [[121, 22, 12, 77], [112, 21, 11, 22], [121, 211, 221, 11], [15, 55, 22, 12]]
+arr = [[166, 116, 13],
+       [61, 6116, 116],
+       [17, 611, 6611]]
 print(ex11(arr))
