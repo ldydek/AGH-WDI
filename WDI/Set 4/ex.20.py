@@ -28,7 +28,6 @@ def chess(T):
     rows, columns = row_column_sum(T)
     solution = None
     value = 0
-    # now let's consider every possible position of two rooks in a matrix
     for a in range(n):
         for b in range(n):
             for c in range(n):
@@ -38,7 +37,7 @@ def chess(T):
                     elif a != c and b != d and value < rows[a] + rows[c] + columns[b] + columns[d] - 2*(T[a][b] + T[c][d]) - T[a][d] - T[c][b]:
                         value = rows[a] + rows[c] + columns[b] + columns[d] - 2*(T[a][b] + T[c][d]) - T[a][d] - T[c][b]
                         solution = [(a, b), (c, d)]
-                    # different rows and columns (the most possible case)
+                    # different rows and columns
     return solution
 
 
