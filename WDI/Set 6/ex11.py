@@ -8,8 +8,8 @@ def ex12(T, k, index):
     if k == 1:
         quantity += 1
     for x in range(index, -1, -1):
-        if k % T[index] == 0:
-            quantity += ex12(T, k//T[index], index-1)
+        if k % T[x] == 0:
+            quantity += ex12(T, k//T[x], x-1)
     return quantity
 
 
