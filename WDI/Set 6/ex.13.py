@@ -1,15 +1,24 @@
 # 13. Write program printing all possible integer divisions for its components. For instance, for number 4 it will be
 # 4 = 1+1+1+1 = 1+1+2 = 2+2 = 3+1.
-# Solution: I consider numbers from 1 to given number with its inclusion. If it is possible to subtract certain number
-# "k" from our integer "n" I do so and make a recursive call on a number: n-k.
+# Solution: I consider numbers from 1 to given number without its inclusion. If it is possible to subtract certain
+# number "k" from our integer "n" I do so and make a recursive call on a number: "n"-"k". Note that this program
+# generates integer divisions without repeating, so, for instance, sum 2+1+1 and 1+1+2 will print only once.
 
-def ex13(number, string):
-    if number == 0:
+# thanks to "start" variable program is not able to take data from array that is located on the left from considering
+# number
+def ex13_reku(n, start, aux_tab, string):
+    if n == 0:
         string = string[:len(string)-1]
         print(string)
-    for i in range(1, number+1):
-        ex13(number-i, string+str(i)+"+")
+    for x in range(start, len(aux_tab)):
+        if n >= aux_tab[x]:
+            ex13_reku(n-aux_tab[x], x, aux_tab, string+str(aux_tab[x])+"+")
 
 
-string = ""
-ex13(4, string)
+def ex13(n):
+    string = ""
+    aux_tab = [x for x in range(n-1, 0, -1)]
+    return ex13_reku(n, 0, aux_tab, string)
+
+
+ex13(4)
