@@ -40,9 +40,7 @@ def ternary(a):
         elif a % 3 == 2:
             ctr2 += 1
         a //= 3
-    if ctr1 > ctr2:
-        return True
-    return False
+    return ctr1 > ctr2
 
 
 # function which obviously deletes node "b" from a linked list
