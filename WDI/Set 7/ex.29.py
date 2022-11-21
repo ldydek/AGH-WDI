@@ -33,15 +33,6 @@ def print_list(A):
     print("None")
 
 
-# function which deletes node "b" from a linked list
-def remove_node(a, b, c):
-    a.next = c
-    b = b.next
-    if c:
-        c = c.next
-    return a, b, c
-
-
 # function computing linked list length
 def length(a):
     ctr = 0
