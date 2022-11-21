@@ -6,6 +6,7 @@ from math import log
 from math import e
 
 
+# function returning derivative of f(x) = x^x - 2020
 def derivative(x):
     return (e ** (x * log(x, e))) * (1 + log(x, e))
 
