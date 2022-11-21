@@ -57,11 +57,13 @@ def ex28(a, b):
                 break
             back2 = back2.next
             middle2 = middle2.next
-            front2 = front2.next
+            if front2:
+                front2 = front2.next
         if flag is False:
             back1 = back1.next
             middle1 = middle1.next
-            front1 = front1.next
+            if front1:
+                front1 = front1.next
     return ctr
 
 
