@@ -13,6 +13,7 @@
 # in an array with integers). So my idea is simple: traverse given list once and find longest common multiple of all
 # denominators. Now I can extend each fraction and leave only numerators. Now I have basic problem of finding
 # subsequence length where array contains only integers.
+# Passed all tests
 
 
 # function computing longest common multiple of two numbers
