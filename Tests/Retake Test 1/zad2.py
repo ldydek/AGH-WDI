@@ -1,10 +1,12 @@
 # 2. We have given word which consists with letters from english alphabet. We cut this word into some pieces but each
 # piece has to contain exactly one vowel. Write a function cutting(s), which returns number of ways of cutting this
 # word.
+
 # Examples:
 # print(cutting(’student’)) returns 2, because stu-dent, stud-ent
 # print(cutting(’sesja’)) returns 3, because se-sja, ses-ja, sesj-a
 # print(cutting(’ocena’)) returns 8
+
 # Solution: at the beginning, I traverse this word and mark in additional array places where we meet vowels. Later
 # I call additional function which returns indexes on which we can meet first and last digit 1 in the array. At the end,
 # we simply traverse this array one more time between these indexes and count how many 0 (how many consonants) is next
