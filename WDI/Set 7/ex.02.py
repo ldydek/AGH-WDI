@@ -47,9 +47,13 @@ def insert(a, n, value):
     a.value = value
 
 
+def ex02():
+    a = initialize(tab)
+    print_list(a)
+    print(node_value(a, 3))
+    insert(a, 4, 100)
+    print_list(a)
+
+
 tab = [1, 5, 10, 2, 6, 40, 7]
-a = initialize(tab)
-print_list(a)
-print(node_value(a, 3))
-insert(a, 4, 100)
-print_list(a)
+ex02()
