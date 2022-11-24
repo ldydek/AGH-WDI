@@ -47,7 +47,7 @@ def shortening(a):
 
 
 # enter numbers separated by / e.g. 2/3
-def fractions_input():
+def fraction_input():
     l, m = input().split("/")
     l = int(l)
     m = int(m)
@@ -55,8 +55,8 @@ def fractions_input():
 
 
 def ex01():
-    l1, m1 = fractions_input()
-    l2, m2 = fractions_input()
+    l1, m1 = fraction_input()
+    l2, m2 = fraction_input()
     print(addition((l1, m1), (l2, m2)))
     print(subtraction((l1, m1), (l2, m2)))
     print(multiplication((l1, m1), (l2, m2)))
